@@ -1,5 +1,8 @@
 # Byte-compiled / optimized / DLL files
 .env
+.idea2
+.idea2/
+.idea
 .idea/
 __pycache__/
 *.py[cod]
@@ -129,3 +132,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+/.idea2/
