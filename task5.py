@@ -46,4 +46,4 @@ with open(file_path, 'r', encoding='UTF-8') as working_file:
         while j < len(list_from_line):
             in_file_sum += float(list_from_line[j])
             j += 1
-    print(in_file_sum)
+print(in_file_sum)
