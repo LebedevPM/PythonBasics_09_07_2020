@@ -37,7 +37,7 @@ while True:
         string_of_numbers = numeric_string(user_input)
     with open(file_path, 'a', encoding='UTF-8') as working_file:
         working_file.write(f'{string_of_numbers}\n')
-# считаем сумму чисел в файле
+# считаем сумму чисел в файле проходя каждую строку
 in_file_sum = 0
 with open(file_path, 'r', encoding='UTF-8') as working_file:
     for line in working_file:
