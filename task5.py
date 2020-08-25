@@ -1,6 +1,9 @@
 import os
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> a4b6e783bc41108fe88d8d779f4413f5d3f96abe
 def numeric_string(string: str) -> str:
     """Функция проверяет, чтобы входящая строка состояла только из чисел через пробелы.
     Любые не числовые 'слова' будут удалены
@@ -23,12 +26,18 @@ def numeric_string(string: str) -> str:
 
 
 file_path = os.path.join(os.path.dirname(__file__), 'text_file5.txt')
+<<<<<<< HEAD
 # удаляем файл, если такой уже есть
+=======
+>>>>>>> a4b6e783bc41108fe88d8d779f4413f5d3f96abe
 try:
     os.remove(file_path)
 except FileNotFoundError:
     pass
+<<<<<<< HEAD
 # пользователь заполняет файл строками чисел
+=======
+>>>>>>> a4b6e783bc41108fe88d8d779f4413f5d3f96abe
 while True:
     user_input = input('Введите строку из чисел через пробел. Пустая строка - конец ввода\n')
     if not user_input:
@@ -36,6 +45,7 @@ while True:
     else:
         string_of_numbers = numeric_string(user_input)
     with open(file_path, 'a', encoding='UTF-8') as working_file:
+<<<<<<< HEAD
         working_file.write(f'{string_of_numbers}\n')
 # считаем сумму чисел в файле
 in_file_sum = 0
@@ -47,3 +57,6 @@ with open(file_path, 'r', encoding='UTF-8') as working_file:
             in_file_sum += float(list_from_line[j])
             j += 1
 print(in_file_sum)
+=======
+        working_file.write(f'{string_of_numbers} ')
+>>>>>>> a4b6e783bc41108fe88d8d779f4413f5d3f96abe
